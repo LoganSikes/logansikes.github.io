@@ -1,0 +1,33 @@
+<div id="work2" class="lightbox">
+                    <button class="lightbox-close">&times;</button>
+                    <div class="lightbox-content">
+                        <img src="pictures/Work2/About Time.png" alt="">
+                    </div>
+                </div>
+
+                <div id="work3" class="lightbox">
+                    <button class="lightbox-close">&times;</button>
+                    <div class="lightbox-content">
+                        <img src="pictures/Work3/Airport Poster.JPG" alt="">
+                    </div>
+                </div>
+
+                <div id="work4" class="lightbox">
+                    <button class="lightbox-close">&times;</button>
+                    <div class="lightbox-content">
+                        <img src="pictures/Work4/Cover.png" alt="">
+                        <img src="pictures/Work4/Spread1.png" alt="">
+                        <img src="pictures/Work4/Spread2.png" alt="">
+                        <img src="pictures/Work4/Spread3.png" alt="">
+                        <img src="pictures/Work4/Spread4.png" alt="">
+                        <img src="pictures/Work4/Spread5.png" alt="">
+                        <img src="pictures/Work4/Spread6.png" alt="">
+                        <img src="pictures/Work4/Spread7.png" alt="">
+                        <img src="pictures/Work4/Spread8.png" alt="">
+                        <img src="pictures/Work4/Spread9.png" alt="">
+                        <img src="pictures/Work4/Spread10.png" alt="">
+                        <img src="pictures/Work4/Spread11.png" alt="">
+                        <img src="pictures/Work4/Spread12.png" alt="">
+                        <img src="pictures/Work4/Back.png" alt="">
+                    </div>
+                </div>

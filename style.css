@@ -1,3 +1,6 @@
+/*
+  This is the header styling logic.
+*/
 #header {
     background-color: #2C7A7B;
     display: flex;
@@ -12,6 +15,9 @@
     color: white;
 }
 
+/*
+  This is the styling for the navigation section.
+*/
 .horiz-list {
     display: flex;
     gap: 1rem;
@@ -22,6 +28,9 @@
     font-size: 30px;
 }
 
+/*
+  This is the styling for the navigation buttons.
+*/
 .horiz-list a {
     text-decoration: none;
     padding: 0.25rem 0.5rem;
@@ -32,16 +41,25 @@
     transition: background-color 0.2s, color 0.2s;
 }
 
+/*
+  This is styling for when the cursor is hovering over the navigation buttons.
+*/
 .horiz-list a:hover {
     background-color: #FF6B6B;
     color: white;
 }
 
+/*
+  This is styling for the name at the top of the page.
+*/
 #topname {
     margin: 0;
     font-size: 75px;
 }
 
+/*
+  This is styling for the body of the website.
+*/
 body {
     margin: 0;
     padding: 0;
@@ -49,11 +67,17 @@ body {
     color: #333333;
 }
 
+/*
+  This is the styling for the mywork section.
+*/
 #mywork {
     background-color: #F5F5F5;
     background-image: url(background_overlay.jpg);
 }
 
+/*
+  This is the styling for the gallery or grid area for the projects.
+*/
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -63,6 +87,9 @@ body {
   justify-content: center;
 }
 
+/*
+  This is the styling of the individual items in the gallery.
+*/
 .gallery-item {
   max-width: 600px;
   margin: 2rem auto;
@@ -70,6 +97,9 @@ body {
   cursor: pointer;
 }
 
+/*
+  This is the styling for images inside each gallery item.
+*/
 .gallery-item img {
   width: 100%;
   border-radius: 8px;
@@ -77,105 +107,181 @@ body {
   transition: transform 0.2s;
 }
 
+/*
+  This is the styling for when you hover over any gallery item.
+*/
 .gallery-item img:hover {
   transform: scale(1.03);
 }
 
+/*
+  This is the styling for all of the lightboxs that are used on the gallery.
+*/
 .lightbox {
-  background: rgba(0, 0, 0, 0.9);
   display: none;
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  color: #333;
 }
 
+/*
+  This is the styling for the content within the lightbox.
+*/
 .lightbox-content {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-  max-width: 90vw;
-  max-height: 90vh;
-  overflow-y: auto;
-  overflow-x: auto;
-}
-
-.lightbox-item {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.lightbox-item:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-
-.lightbox-item:nth-child(even) {
+  background: white;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 80%;
+  overflow: hidden;
+  position: relative;
   flex-direction: row;
 }
 
-.lightbox-item img {
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
+/*
+  This is the styling for the images within the ligthbox content section.
+*/
+.lightbox-content-image {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  overflow: hidden;
 }
 
-.lightbox-details {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 12px;
-  width: 250px;
+.lightbox-content-image img {
+  display: none;
+  max-width: 620px;
+  max-height: 620px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.lightbox-content-image img.active {
+  display: block;
+}
+
+.lightbox-image-prev,
+.lightbox-image-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.6);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.2s ease;
+}
+
+.lightbox-image-prev:hover,
+.lightbox-image-next:hover {
+  background: blue;
+}
+
+.lightbox-image-prev {
+  left: 0;
+  padding-left: 10px;
+}
+
+.lightbox-image-next {
+  right: 0;
+  padding-right: 10px;
+}
+
+.lightbox-content-details {
+  width: 300px;
+  padding: 2rem;
+  background: #fefefe;
+  border-left: 1px solid #ddd;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  color: #333333;
+  text-align: left;
 }
 
-.lightbox-content img {
-  width: auto;
-  max-width: 800px;
-  height: auto;
-  max-height: 80vh;
-  border-radius: 8px;
-  cursor: pointer;
-  object-fit: cover;
+.lightbox-content-details h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
 }
 
-.lightbox-details h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.lightbox-details p {
-  margin: 0;
-  font-size: 0.95rem;
+.lightbox-content-details p {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .detail-field {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.lightbox-details a {
-  color: #FF6B6B;
-  text-decoration: underline;
+.lightbox-content-details a {
+    color: blue;
+    text-decoration: underline;
 }
 
-@media (max-width: 700px) {
-  .lightbox-item {
-    flex-direction: column !important;
+/* Close button for lightbox */
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: rgba(255,255,255,0.85);
+    border: none;
+    color: #333;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
     align-items: center;
-    text-align: center;
-  }
+    justify-content: center;
+    z-index: 1001;
+}
 
-  .lightbox-details {
-    width: 80%;
-  }
+.lightbox-close:hover {
+    background: #FF6B6B;
+    color: white;
+}
 
-  .lightbox-item img {
-    width: 80%;
-  }
+/* =======================
+   Responsive styling
+======================= */
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .lightbox-content {
+        flex-direction: column;
+        max-height: 90%;
+    }
+
+    .lightbox-content-details {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .lightbox-content-image img {
+        max-width: 90%;
+    }
+
+    .lightbox-image-prev,
+    .lightbox-image-next {
+        font-size: 1.5rem;
+        padding: 6px 10px;
+    }
 }
