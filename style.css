@@ -254,6 +254,11 @@ body {
     color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* =======================
    Responsive styling
 ======================= */
