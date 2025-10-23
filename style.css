@@ -186,7 +186,7 @@ body {
 
 .lightbox-image-prev:hover,
 .lightbox-image-next:hover {
-  background: blue;
+  background: white;
 }
 
 .lightbox-image-prev {
@@ -226,7 +226,7 @@ body {
 }
 
 .lightbox-content-details a {
-    color: white;
+    color: blue;
     text-decoration: underline;
 }
 
