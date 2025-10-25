@@ -74,45 +74,6 @@ body {
   background-color: #F5EEDF;
 }
 
-#about {
-  background-color: #333333;
-  color: white;
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
-}
-
-#about p {
-  margin: 0;
-  padding: 1rem;
-  text-align: center;
-  font-size: 20px;
-}
-
-#about h2 {
-  margin: 0;
-  padding-top: 1rem;
-  text-align: center;
-}
-
-#contact {
-  background-color: #333333;
-  color: white;
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
-  justify-content: center;
-}
-
-#contact p {
-  margin: 0;
-  padding: 1rem;
-  text-align: center;
-  font-size: 20px;
-}
-
-#contact h2 {
-  margin: 0;
-  padding-top: 1rem;
-  text-align: center;
-}
-
 /*
   This is the styling for the gallery or grid area for the projects.
 */
