@@ -2,7 +2,7 @@
   This is the header styling logic.
 */
 #header {
-    background-color: #2C7A7B;
+    background-color: #BFA6A0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,6 +13,7 @@
     top: 0;
     z-index: 100;
     color: white;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
 }
 
 /*
@@ -36,7 +37,6 @@
     padding: 0.25rem 0.5rem;
     display: inline-block;
     color: white;
-    border: 2px solid #FF6B6B;
     border-radius: 8px;
     transition: background-color 0.2s, color 0.2s;
 }
@@ -45,7 +45,7 @@
   This is styling for when the cursor is hovering over the navigation buttons.
 */
 .horiz-list a:hover {
-    background-color: #FF6B6B;
+    background-color: #A9746E;
     color: white;
 }
 
@@ -71,8 +71,7 @@ body {
   This is the styling for the mywork section.
 */
 #mywork {
-    background-color: #F5F5F5;
-    background-image: url(background_overlay.jpg);
+    background-color: #F5EEDF;
 }
 
 /*
@@ -105,6 +104,12 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   transition: transform 0.2s;
+}
+
+.gallery-item figcaption {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /*
