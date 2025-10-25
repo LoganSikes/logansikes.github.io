@@ -78,18 +78,17 @@ body {
   This is the styling for the gallery or grid area for the projects.
 */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 2rem 3rem;
-  box-sizing: border-box;
-  justify-content: center;
+  column-count: 2;
+  column-gap: 5px;
+  row-gap: 1rem;
+  text-align: center;
 }
 
 /*
   This is the styling of the individual items in the gallery.
 */
 .gallery-item {
+  display: inline-block;
   max-width: 600px;
   margin: 2rem auto;
   text-align: center;
