@@ -2,76 +2,76 @@
   This is the header styling logic.
 */
 #header {
-    background-color: #BFA6A0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    width: 100%;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    color: white;
-    font-family: Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
+  background-color: #BFA6A0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: white;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
 }
 
 /*
   This is the styling for the navigation section.
 */
 .horiz-list {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    font-size: 30px;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-size: 30px;
 }
 
 /*
   This is the styling for the navigation buttons.
 */
 .horiz-list a {
-    text-decoration: none;
-    padding: 0.25rem 0.5rem;
-    display: inline-block;
-    color: white;
-    border-radius: 8px;
-    transition: background-color 0.2s, color 0.2s;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 /*
   This is styling for when the cursor is hovering over the navigation buttons.
 */
 .horiz-list a:hover {
-    background-color: #A9746E;
-    color: white;
+  background-color: #A9746E;
+  color: white;
 }
 
 /*
   This is styling for the name at the top of the page.
 */
 #topname {
-    margin: 0;
-    font-size: 75px;
+  margin: 0;
+  font-size: 75px;
 }
 
 /*
   This is styling for the body of the website.
 */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #F5F5F5;
-    color: #333333;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+  color: #333333;
 }
 
 /*
   This is the styling for the mywork section.
 */
 #mywork {
-    background-color: #F5EEDF;
+  background-color: #F5EEDF;
 }
 
 /*
@@ -215,51 +215,90 @@ body {
 }
 
 .lightbox-content-details h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
 }
 
 .lightbox-content-details p {
-    margin: 0;
-    font-size: 1.5rem;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .detail-field {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .lightbox-content-details a {
-    color: blue;
-    text-decoration: underline;
+  color: blue;
+  text-decoration: underline;
 }
 
 /* Close button for lightbox */
 .lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    background: rgba(255,255,255,0.85);
-    border: none;
-    color: #333;
-    font-size: 2rem;
-    border-radius: 50%;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1001;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: rgba(255,255,255,0.85);
+  border: none;
+  color: #333;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
 }
 
 .lightbox-close:hover {
-    background: #FF6B6B;
-    color: white;
+  background: #FF6B6B;
+  color: white;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+#about {
+  background-color: #333333;
+  color: white;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
+}
+
+#about p {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+#about h2 {
+  margin: 0;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#contact {
+  background-color: #333333;
+  color: white;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
+  justify-content: center;
+}
+
+#contact p {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+#contact h2 {
+  margin: 0;
+  padding-top: 1rem;
+  text-align: center;
 }
 
 
