@@ -26,8 +26,16 @@ nav {
 
 #list-nav {
     margin-left: auto;
+    margin-right: 100px;
     display: flex;
-    gap: 20px;
+    gap: 75px;
+}
+
+#list-nav a {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
 
 #lukesikes {
@@ -43,4 +51,11 @@ nav {
 #lukesikes img:hover {
     transform: scale(1.02);
 }
+
+#featured-work {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0px 0px 0px;
+}
+
 
