@@ -1,0 +1,46 @@
+body {
+    background-color: #E8E6E6;
+    margin: 0px;
+}
+
+nav {
+    background-color: #E8E6E6;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#home-nav {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#home-nav img {
+    transition: transform 0.25s ease;
+}
+
+#home-nav img:hover {
+    transform: scale(1.08);
+}
+
+#list-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+#lukesikes {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#lukesikes img {
+    transition: transform 0.25s ease;
+}
+
+#lukesikes img:hover {
+    transform: scale(1.02);
+}
+
